@@ -1,0 +1,18 @@
+{
+  "name": "practicas",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "temp": "node clasificador_temperatura.js",
+    "parq": "node cobro_parqueadero.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^14.2.3"
+  }
+}
