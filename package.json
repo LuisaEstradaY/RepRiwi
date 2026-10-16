@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "temp": "node clasificador_temperatura.js",
     "parq": "node cobro_parqueadero.js",
-    "cuentareg": "node cuenta_regresiva.js"
+    "cuentareg": "node cuenta_regresiva.js",
+    "fizzbuzz": "node fizzbuzz.js"
   },
   "keywords": [],
   "author": "",

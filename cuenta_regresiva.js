@@ -17,6 +17,6 @@ inquirer
             console.log(i);    
         } else {
             console.log("Número no válido")
-        } 
+        } console.log("Despegue!")
 
     })
