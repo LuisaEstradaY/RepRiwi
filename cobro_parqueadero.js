@@ -4,10 +4,10 @@ inquirer
     .prompt([
         {
             type: 'input',
-            name: 'hora',
+            name: 'hora', 
             message: '¿Cuantás horas duraste en el parqueadero?'
         },
-          {
+        {
             type: 'select',
             name: 'coder',
             message: '¿Eres coder de Riwi?',
@@ -15,12 +15,24 @@ inquirer
         }
     ])
     .then((answers) => {
-        let hora = (answers.hora);
+        const horas = Number(answers.hora);
+        let total = 0;
 
-        if (hora = 1){
-            console.log("Debes pagar 3.000")
-        } else if (hola) {
-            console.log
+        if (horas > 0 && answers.coder === 'No' ) {
+            total = Math.min(3000 + (horas - 1) * 2000, 20000);
+            console.log(`Debes pagar ${total}`)
         }
+
+        else if (answers.coder === 'Si') {
+            const descuento = 0.15
+            total = Math.min(3000 + (horas - 1) * 2000, 20000);
+
+            total = total - (total * descuento)
+
+            console.log("Debes de pagar: ", total)
+        }
+
     
     })
+
+   
